@@ -17,7 +17,7 @@ export default function PeeringPolicy() {
         <div className="max-w-3xl mx-auto">
           <div className="prose prose-lg">
             <p className="text-center text-lg mb-8">
-              AS208437 maintains an open peering policy, establishing connections with networks that share our presence at mutual exchange points, in accordance with our established peering guidelines.
+              AS208437 maintains an open peering policy, establishing connections with networks that share our presence at mutual exchange
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">Peering Policy</h2>
@@ -35,7 +35,7 @@ export default function PeeringPolicy() {
             </ul>
 
             <p className="text-center text-lg">
-              For peering inquiries, please contact our Network Operations Center (NOC).
+              For peering inquiries, please contact <a className="text-blue-500 hover:underline" href="mailto:noc@hyperbit.it">noc@hyperbit.it</a>.
             </p>
           </div>
         </div>
