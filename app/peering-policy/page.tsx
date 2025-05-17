@@ -1,7 +1,4 @@
 import Image from "next/image"
-import { Link as LucideLink } from "lucide-react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 
 export default function PeeringPolicy() {
   return (

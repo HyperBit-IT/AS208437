@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Link as LucideLink } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -19,21 +18,18 @@ export default function Home() {
           <div className="space-y-6">
             <InfoCard
               title="BGP Info"
-              icon="server"
               description="Check out the page of our AS on the Hurricane Electric portal"
               href="https://bgp.he.net/AS208437"
             />
 
             <InfoCard
               title="Contacts"
-              icon="server"
               description="Contact me if you want information about peering or to report a problem"
               href="https://hyperbit.it/en/contact"
             />
 
             <InfoCard 
               title="Peering Policy" 
-              icon="server" 
               description="Our peering policy"
               href="/peering-policy"
             />
@@ -68,7 +64,7 @@ export default function Home() {
   )
 }
 
-function InfoCard({ title, icon, description, href }: { title: string; icon: string; description: string; href: string }) {
+function InfoCard({ title, description, href }: { title: string; description: string; href: string }) {
   return (
     <Link href={href} className="block">
       <div className="border rounded-lg p-6 hover:bg-[#f5f5f5] transition-colors cursor-pointer">
@@ -90,7 +86,7 @@ function PrefixCard({ prefix, description }: { prefix: string, description: stri
   return (
     <div className="border rounded-lg p-4">
       <div className="flex items-center gap-3">
-        <LucideLink className="text-[#757575]" size={20} />
+        <ServerIcon />
         <div>
           <h3 className="text-lg font-medium font-mono">{prefix}</h3>
           <p className="text-[#757575]">{description}</p>
