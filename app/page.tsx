@@ -54,10 +54,8 @@ export default function Home() {
             <p className="text-[#757575] mb-6">This page lists all prefixes announced by this AS</p>
 
             <div className="space-y-4">
-              <PrefixCard prefix="151.242.0.0/24" />
-              <PrefixCard prefix="151.242.0.0/24" />
-              <PrefixCard prefix="151.242.0.0/24" />
-              <PrefixCard prefix="151.242.0.0/24" />
+              <PrefixCard prefix="151.242.0.0/24" description="Hyperbit SRLs - IPv4" />
+              <PrefixCard prefix="2a0d:b287:dad0::/44" description="Hyperbit SRLs - IPv6" />
             </div>
           </div>
         </div>
@@ -88,14 +86,14 @@ function InfoCard({ title, icon, description, href }: { title: string; icon: str
   )
 }
 
-function PrefixCard({ prefix }: { prefix: string }) {
+function PrefixCard({ prefix, description }: { prefix: string, description: string }) {
   return (
     <div className="border rounded-lg p-4">
       <div className="flex items-center gap-3">
         <LucideLink className="text-[#757575]" size={20} />
         <div>
           <h3 className="text-lg font-medium font-mono">{prefix}</h3>
-          <p className="text-[#757575]">Hyperbit SRLs</p>
+          <p className="text-[#757575]">{description}</p>
         </div>
       </div>
     </div>
