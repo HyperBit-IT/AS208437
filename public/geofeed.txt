@@ -1,0 +1,3 @@
+# Date updated UTC0:2025-05-21 10:00:00
+151.242.0.0/24,IT,IT-32,Bolzano,
+2a0d:b287:dad0::/44,IT,IT-32,Bolzano,
