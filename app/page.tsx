@@ -25,7 +25,7 @@ export default function Home() {
             <InfoCard
               title="Contacts"
               description="Contact me if you want information about peering or to report a problem"
-              href="https://hyperbit.it/en/contact"
+              href="https://hyperbit.it/net"
             />
 
             <InfoCard 
@@ -50,7 +50,8 @@ export default function Home() {
             <p className="text-[#757575] mb-6">This page lists all prefixes announced by this AS</p>
 
             <div className="space-y-4">
-              <PrefixCard prefix="151.242.0.0/24" description="Hyperbit SRLs - IPv4" />
+              <PrefixCard prefix="151.242.0.0/24" description="Hyperbit SRLs - Server IPv4" />
+              <PrefixCard prefix="140.233.176.0/24" description="Hyperbit SRLs - IPv4" />
               <PrefixCard prefix="2a0d:b287:dad0::/44" description="Hyperbit SRLs - IPv6" />
             </div>
           </div>
