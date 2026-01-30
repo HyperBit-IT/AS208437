@@ -1,5 +1,8 @@
 # Date updated UTC0:2025-10-27 16:56:00
-151.242.0.0/24,IT,IT-32,Bolzano,
+151.242.0.0/24,IT,IT-32,Milano,
 140.233.176.0/24,IT,IT-32,Bolzano,
 2a0d:b287:dad0::/44,IT,IT-32,Bolzano,
 2a14:7586:f000::/36,IT,IT-32,Bolzano,
+2a14:7586:f000::/40,IT,IT-32,Milano,
+2a14:7586:f100::/40,IT,IT-32,Bolzano,
+2a14:7586:ff00::/40,IT,IT-32,Bolzano,
