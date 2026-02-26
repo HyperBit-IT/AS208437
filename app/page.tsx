@@ -18,8 +18,8 @@ export default function Home() {
           <div className="space-y-6">
             <InfoCard
               title="BGP Info"
-              description="Check out the page of our AS on the Hurricane Electric portal"
-              href="https://bgp.he.net/AS208437"
+              description="Check out the page of our AS on the BGP.tools portal"
+              href="https://bgp.tools/AS208437"
             />
 
             <InfoCard
@@ -36,10 +36,10 @@ export default function Home() {
 
             <div className="grid grid-cols-2 gap-4 mt-4">
               <Button variant="default" className="w-full" asChild>
-                <Link href="https://lg.hb-bkbn.net">Looking Glass</Link>
+                <Link href="https://rpki.net.hb-bkbn.net">RPKI Validator</Link>
               </Button>
               <Button variant="default" className="w-full" asChild>
-                <Link href="https://graphs.hb-bkbn.net">Weather Map</Link>
+                <Link href="https://status.as208437.net">Network Status</Link>
               </Button>
             </div>
           </div>
@@ -51,8 +51,11 @@ export default function Home() {
 
             <div className="space-y-4">
               <PrefixCard prefix="151.242.0.0/24" description="Hyperbit SRLs - Server IPv4" />
-              <PrefixCard prefix="140.233.176.0/24" description="Hyperbit SRLs - IPv4" />
-              <PrefixCard prefix="2a0d:b287:dad0::/44" description="Hyperbit SRLs - IPv6" />
+              <PrefixCard prefix="140.233.176.0/24" description="Hyperbit SRLs - DSL IPv4" />
+              <PrefixCard prefix="2a14:7586:f000::/40" description="Hyperbit SRLs - Server IPv6" />
+              <PrefixCard prefix="2a14:7586:f100::/40" description="Hyperbit SRLs - DSL IPv6" />
+              <PrefixCard prefix="2a14:7586:ff00::/40" description="Hyperbit SRLs - Backbone IPv6" />
+              <PrefixCard prefix="2a0d:b287:dad0::/44" description="Hyperbit SRLs - General IPv6" />
             </div>
           </div>
         </div>
