@@ -35,35 +35,34 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1rem;
-    padding: 1.3rem 1.4rem;
+    padding: 1.2rem 1.25rem;
     transition:
-      transform 180ms ease,
-      border-color 180ms ease,
-      box-shadow 180ms ease;
+      background-color 180ms ease,
+      border-color 180ms ease;
   }
 
   .card-link:hover,
   .card-link:focus-visible {
-    transform: translateY(-2px);
-    border-color: rgba(15, 118, 110, 0.26);
-    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
+    background: #fafafa;
+    border-color: #d1d5db;
   }
 
   .card-icon {
     display: inline-grid;
     place-items: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 1rem;
-    background: rgba(15, 118, 110, 0.1);
-    color: var(--accent);
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+    color: #4b5563;
   }
 
   .card-icon svg {
-    width: 1.45rem;
-    height: 1.45rem;
+    width: 1.35rem;
+    height: 1.35rem;
     stroke: currentColor;
-    stroke-width: 1.75;
+    stroke-width: 1.6;
   }
 
   .card-copy {
@@ -72,13 +71,12 @@
   }
 
   .card-title {
-    font-size: 1.1rem;
-    font-weight: 650;
-    letter-spacing: -0.03em;
+    font-size: 1.05rem;
+    font-weight: 600;
   }
 
   .card-description {
     color: var(--text-secondary);
-    line-height: 1.55;
+    line-height: 1.5;
   }
 </style>

@@ -7,13 +7,13 @@ export const infoCards = [
   },
   {
     title: 'Contacts',
-    description: 'Contact us for peering information or to report a network issue.',
+    description: 'Contact us for peering information or to report a problem.',
     href: 'https://hyperbit.it/net',
     external: true
   },
   {
     title: 'Peering Policy',
-    description: 'Read our current peering policy and operating terms.',
+    description: 'Our peering policy.',
     href: '/peering-policy',
     external: false
   }
@@ -59,13 +59,13 @@ export const prefixes = [
 
 export const policyItems = [
   'We actively participate in Route Server peering at all IXPs where we are present.',
-  'We strongly recommend establishing peering through the Route Server whenever possible.'
+  'We strongly recommend establishing peering connections through the Route Server.'
 ] as const;
 
 export const reservedRights = [
-  'We may update our policy and technical requirements at any time.',
+  'We maintain the right to modify our policy and requirements at any time.',
   'We reserve the right to accept or decline any peering request at our discretion.',
-  'We may terminate any peering arrangement without prior notice if operationally required.'
+  'We retain the right to terminate any peering arrangement without prior notice.'
 ] as const;
 
 export const currentYear = new Date().getFullYear();

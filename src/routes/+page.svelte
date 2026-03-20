@@ -18,11 +18,11 @@
       <div class="site-logo">
         <img src="/HyperBit_Dark_Logo.svg" alt="HyperBit logo" width="120" height="120" />
       </div>
-      <span class="pill">ASN AS208437</span>
-      <h1 class="site-title">HyperBit SRLs network edge</h1>
+      <p class="eyebrow">AS208437</p>
+      <h1 class="site-title">AS208437 - HyperBit SRLs</h1>
       <p class="site-subtitle">
-        Operational overview for AS208437, with public routing references, peering policy and the
-        prefixes currently announced by our network.
+        Public information for HyperBit SRLs, including routing references, peering policy and
+        announced prefixes.
       </p>
     </header>
 
@@ -44,7 +44,7 @@
       <aside class="panel prefixes-panel">
         <div class="prefixes-header">
           <h2 class="panel-title">Prefixes</h2>
-          <p class="panel-copy">All public prefixes currently announced by AS208437.</p>
+          <p class="panel-copy">This page lists all prefixes announced by this AS.</p>
         </div>
 
         <div class="stack">
@@ -63,7 +63,7 @@
 
 <style>
   .prefixes-panel {
-    padding: 1.5rem;
+    padding: 1.4rem;
   }
 
   .prefixes-header {

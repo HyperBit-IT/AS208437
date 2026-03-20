@@ -12,15 +12,17 @@
 
 <div class="page-shell">
   <main class="page-frame">
+    <a class="back-link" href="/">← Back to home</a>
+
     <header class="site-header">
       <div class="site-logo">
         <img src="/HyperBit_Dark_Logo.svg" alt="HyperBit logo" width="120" height="120" />
       </div>
-      <span class="pill">Peering Policy</span>
-      <h1 class="site-title">Open peering, clearly defined</h1>
+      <p class="eyebrow">AS208437</p>
+      <h1 class="site-title">Peering Policy</h1>
       <p class="site-subtitle">
-        AS208437 maintains an open peering policy for networks that share our presence at mutual
-        exchange points and can interconnect under stable operational conditions.
+        AS208437 maintains an open peering policy, establishing connections with networks that
+        share our presence at mutual exchange points.
       </p>
     </header>
 
@@ -61,7 +63,7 @@
     gap: 1.8rem;
     max-width: 52rem;
     margin: 0 auto;
-    padding: 1.75rem;
+    padding: 1.5rem;
   }
 
   .policy-block {
@@ -91,7 +93,7 @@
 
   .policy-link {
     color: var(--accent-strong);
-    font-weight: 650;
+    font-weight: 600;
   }
 
   .policy-link:hover {

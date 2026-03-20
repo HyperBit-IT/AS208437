@@ -28,27 +28,28 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1rem;
-    padding: 1rem 1.05rem;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    border-radius: 1.2rem;
-    background: rgba(255, 255, 255, 0.68);
+    padding: 0.95rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #ffffff;
   }
 
   .prefix-icon {
     display: inline-grid;
     place-items: center;
-    width: 2.85rem;
-    height: 2.85rem;
-    border-radius: 0.95rem;
-    background: rgba(15, 23, 42, 0.05);
-    color: var(--text-primary);
+    width: 2.65rem;
+    height: 2.65rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+    color: #4b5563;
   }
 
   .prefix-icon svg {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.3rem;
+    height: 1.3rem;
     stroke: currentColor;
-    stroke-width: 1.75;
+    stroke-width: 1.6;
   }
 
   .prefix-copy {
@@ -60,8 +61,8 @@
   h3 {
     margin: 0;
     font-family: var(--font-mono);
-    font-size: 1rem;
-    font-weight: 650;
+    font-size: 0.98rem;
+    font-weight: 600;
     overflow-wrap: anywhere;
   }
 
