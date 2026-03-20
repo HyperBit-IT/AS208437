@@ -18,7 +18,6 @@
       <div class="site-logo">
         <img src="/HyperBit_Dark_Logo.svg" alt="HyperBit logo" width="120" height="120" />
       </div>
-      <p class="eyebrow">AS208437</p>
       <h1 class="site-title">AS208437 - HyperBit SRLs</h1>
       <p class="site-subtitle">
         Public information for HyperBit SRLs, including routing references, peering policy and
