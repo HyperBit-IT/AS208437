@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { currentYear, policyItems, reservedRights } from '$lib/site';
+  import { networkInfo, peering, policyItems, reservedRights } from '$lib/data/network';
 </script>
 
 <svelte:head>
@@ -10,93 +10,84 @@
   />
 </svelte:head>
 
-<div class="page-shell">
-  <main class="page-frame">
-    <a class="back-link" href="/">← Back to home</a>
+<main class="subpage">
+  <section class="subpage-hero">
+    <div class="container">
+      <a class="back-link" href="/">← Back to overview</a>
 
-    <header class="site-header">
-      <div class="site-logo">
-        <img src="/HyperBit_Dark_Logo.svg" alt="HyperBit logo" width="120" height="120" />
-      </div>
-      <p class="eyebrow">AS208437</p>
-      <h1 class="site-title">Peering Policy</h1>
-      <p class="site-subtitle">
-        AS208437 maintains an open peering policy, establishing connections with networks that
-        share our presence at mutual exchange points.
+      <p class="subpage-kicker">{networkInfo.asn} · Peering</p>
+      <h1>Peering Policy</h1>
+      <p class="subpage-lead">
+        {networkInfo.asn} maintains an open peering policy, establishing connections with
+        networks that share our presence at mutual exchange points.
       </p>
-    </header>
+    </div>
+  </section>
 
-    <section class="panel policy-panel">
-      <div class="policy-block">
-        <h2 class="panel-title">Peering Policy</h2>
-        <ul>
+  <section class="section-pad section-soft">
+    <div class="container panel-grid panel-grid-2">
+      <article class="subpage-panel">
+        <p class="panel-index">Peering policy</p>
+        <ul class="subpage-list">
           {#each policyItems as item}
             <li>{item}</li>
           {/each}
         </ul>
-      </div>
+      </article>
 
-      <div class="policy-block">
-        <h2 class="panel-title">Reserved Rights</h2>
-        <ul>
+      <article class="subpage-panel">
+        <p class="panel-index">Reserved rights</p>
+        <ul class="subpage-list">
           {#each reservedRights as item}
             <li>{item}</li>
           {/each}
         </ul>
-      </div>
+      </article>
+    </div>
+  </section>
 
-      <p class="contact-copy">
-        For peering inquiries, contact
-        <a class="policy-link" href="mailto:noc@hyperbit.it">noc@hyperbit.it</a>.
-      </p>
-    </section>
+  <section class="section-pad">
+    <div class="container">
+      <article class="subpage-panel">
+        <p class="panel-index">Exchange point presence</p>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>IXP</th>
+                <th>Status</th>
+                <th>Peers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono-strong">{peering.ix}</td>
+                <td><span class="status-badge">Active</span></td>
+                <td>{peering.peerCountLabel}</td>
+              </tr>
+              {#each peering.upcomingIxes as ix}
+                <tr>
+                  <td class="mono-strong">{ix}</td>
+                  <td><span class="status-badge dim">In activation</span></td>
+                  <td>—</td>
+                </tr>
+              {/each}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <footer class="site-footer">
-      <p>HyperBit SRLs © {currentYear}</p>
-    </footer>
-  </main>
-</div>
-
-<style>
-  .policy-panel {
-    display: grid;
-    gap: 1.8rem;
-    max-width: 52rem;
-    margin: 0 auto;
-    padding: 1.5rem;
-  }
-
-  .policy-block {
-    display: grid;
-    gap: 0.85rem;
-  }
-
-  ul {
-    display: grid;
-    gap: 0.8rem;
-    margin: 0;
-    padding-left: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.65;
-  }
-
-  li::marker {
-    color: var(--accent);
-  }
-
-  .contact-copy {
-    margin: 0;
-    color: var(--text-secondary);
-    font-size: 1.02rem;
-    line-height: 1.6;
-  }
-
-  .policy-link {
-    color: var(--accent-strong);
-    font-weight: 600;
-  }
-
-  .policy-link:hover {
-    text-decoration: underline;
-  }
-</style>
+  <section class="section-pad section-soft">
+    <div class="container">
+      <article class="subpage-panel">
+        <p class="panel-index">Contact</p>
+        <p class="subpage-copy">
+          For peering inquiries, contact
+          <a href="mailto:noc@hyperbit.it">noc@hyperbit.it</a>.
+        </p>
+      </article>
+    </div>
+  </section>
+</main>

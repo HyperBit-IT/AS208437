@@ -1,6 +1,9 @@
 # AS208437 Website
 
-Sito istituzionale di HyperBit SRLs riscritto in SvelteKit.
+Public network-operations page for HyperBit SRLs (AS208437): routing references, peering policy
+and announced prefixes. Built with SvelteKit, matching the visual language and technical stack
+of the main [HyperBit website](https://hyperbit.it) (Svelte 5, Tailwind CSS 4, Poppins /
+JetBrains Mono), statically prerendered and deployed on Azure Static Web Apps.
 
 ## Sviluppo
 
@@ -21,8 +24,10 @@ npm run preview
 
 ## Struttura
 
-- `src/routes/+page.svelte`: homepage
-- `src/routes/peering-policy/+page.svelte`: peering policy
-- `src/lib/site.ts`: contenuti condivisi del sito
-- `src/app.css`: stile globale
-- `static/`: asset pubblici serviti direttamente
+- `src/routes/+page.svelte`: homepage (network overview, stats, upstreams, prefixes, resources)
+- `src/routes/peering-policy/+page.svelte`: peering policy e presenza IXP
+- `src/lib/data/network.ts`: dati tecnici della rete (ASN, upstream, peering, prefissi, policy)
+- `src/lib/site.ts`: link di risorse derivati dai dati di rete
+- `src/lib/components/`: `SiteNav`, `SiteFooter`
+- `src/app.css`: design system condiviso (dark theme, griglia, tipografia tecnica)
+- `static/`: asset pubblici serviti direttamente (logo, favicon, geofeed)
