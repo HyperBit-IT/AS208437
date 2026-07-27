@@ -14,7 +14,7 @@ export const networkInfo = {
 export const peering = {
   ix: 'MINAP Milano',
   peerCountLabel: '110+',
-  upcomingIxes: ['PCIX', 'VSIX']
+  upcomingIxes: ['PCIX', 'VSIX','STIX', 'NINE-IX']
 } as const;
 
 export const transit = {
@@ -36,17 +36,17 @@ export const upstreams: Upstream[] = [
   {
     asn: 'AS9002',
     name: 'RETN',
-    role: 'Transit IP'
+    role: 'Transit IP + DDoS'
   },
   {
     asn: 'AS41720',
     name: 'Navigabene',
-    role: 'L2 / access'
+    role: 'Backup IP Transit'
   },
   {
     asn: 'AS6939',
     name: 'Hurricane Electric',
-    role: 'Backup + IPv6'
+    role: 'IPv6 IP Transit'
   }
 ];
 
@@ -72,7 +72,12 @@ export const prefixes: Prefix[] = [
   },
   {
     prefix: '140.233.176.0/24',
-    description: 'HyperBit SRLs — DSL IPv4',
+    description: 'HyperBit SRLs — Bolzano/Bozen DSL IPv4',
+    family: 'IPv4'
+  },
+  {
+    prefix: '94.158.185.0/24',
+    description: 'HyperBit SRLs — Trento DSL IPv4',
     family: 'IPv4'
   },
   {
@@ -82,7 +87,12 @@ export const prefixes: Prefix[] = [
   },
   {
     prefix: '2a14:7586:f100::/40',
-    description: 'HyperBit SRLs — DSL IPv6',
+    description: 'HyperBit SRLs — Bolzano/Bozen DSL IPv6',
+    family: 'IPv6'
+  },
+  {
+    prefix: '2a14:7586:f200::/40',
+    description: 'HyperBit SRLs — Trento DSL IPv6',
     family: 'IPv6'
   },
   {
