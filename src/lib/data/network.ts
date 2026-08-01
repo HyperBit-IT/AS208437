@@ -14,8 +14,83 @@ export const networkInfo = {
 export const peering = {
   ix: 'MINAP Milano',
   peerCountLabel: '110+',
-  upcomingIxes: ['PCIX', 'VSIX','STIX', 'NINE-IX']
+  upcomingIxes: ['STIX', 'VSIX', 'NINE-IX']
 } as const;
+
+// Additional active IXPs beyond `peering.ix` (which carries the headline peer count).
+export const additionalActiveIxes = [{ name: 'PCIX Piacenza', peersLabel: '—' }] as const;
+
+// Physical network sites (PoPs and IX presence), used by the network map page.
+// Coordinates are city-level (not exact facility addresses).
+export interface NetworkSite {
+  id: string;
+  name: string;
+  type: 'pop' | 'ix';
+  status: 'active' | 'activating';
+  city: string;
+  facility: string;
+  role: string;
+  lat: number;
+  lon: number;
+}
+
+export const networkSites: NetworkSite[] = [
+  {
+    id: 'milano-pop',
+    name: 'Milano',
+    type: 'pop',
+    status: 'active',
+    city: 'Milano',
+    facility: 'Seeweb — Green Building',
+    role: 'Main PoP',
+    lat: 45.4642,
+    lon: 9.19
+  },
+  {
+    id: 'minap',
+    name: 'MINAP',
+    type: 'ix',
+    status: 'active',
+    city: 'Milano',
+    facility: 'Seeweb',
+    role: 'Internet Exchange',
+    lat: 45.4642,
+    lon: 9.19
+  },
+  {
+    id: 'pcix',
+    name: 'PCIX',
+    type: 'ix',
+    status: 'active',
+    city: 'Piacenza',
+    facility: 'Naquadria',
+    role: 'Internet Exchange',
+    lat: 45.0526,
+    lon: 9.693
+  },
+  {
+    id: 'stix',
+    name: 'STIX',
+    type: 'ix',
+    status: 'activating',
+    city: 'Bolzano',
+    facility: 'Bolzano',
+    role: 'Internet Exchange — in activation',
+    lat: 46.4983,
+    lon: 11.3548
+  },
+  {
+    id: 'vsix',
+    name: 'VSIX',
+    type: 'ix',
+    status: 'activating',
+    city: 'Padova',
+    facility: 'Università di Padova',
+    role: 'Internet Exchange — in activation',
+    lat: 45.4064,
+    lon: 11.8768
+  }
+];
 
 export const transit = {
   upstreamCount: 3,

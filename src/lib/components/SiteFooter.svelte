@@ -12,6 +12,7 @@
 
     <div class="footer-links">
       <a href="/">Overview</a>
+      <a href="/network-map">Network Map</a>
       <a href="/peering-policy">Peering Policy</a>
       <a href="https://hyperbit.it" target="_blank" rel="noreferrer">hyperbit.it</a>
       <a href="mailto:noc@hyperbit.it">noc@hyperbit.it</a>

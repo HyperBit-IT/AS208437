@@ -1,5 +1,11 @@
 <script lang="ts">
-  import { networkInfo, peering, policyItems, reservedRights } from '$lib/data/network';
+  import {
+    additionalActiveIxes,
+    networkInfo,
+    peering,
+    policyItems,
+    reservedRights
+  } from '$lib/data/network';
 </script>
 
 <svelte:head>
@@ -65,6 +71,13 @@
                 <td><span class="status-badge">Active</span></td>
                 <td>{peering.peerCountLabel}</td>
               </tr>
+              {#each additionalActiveIxes as ix}
+                <tr>
+                  <td class="mono-strong">{ix.name}</td>
+                  <td><span class="status-badge">Active</span></td>
+                  <td>{ix.peersLabel}</td>
+                </tr>
+              {/each}
               {#each peering.upcomingIxes as ix}
                 <tr>
                   <td class="mono-strong">{ix}</td>
