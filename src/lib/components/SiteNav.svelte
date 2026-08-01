@@ -13,6 +13,7 @@
 
   <div class="nav-links">
     <a href="/" class:active={pathname === '/'}>Overview</a>
+    <a href="/network-map" class:active={pathname === '/network-map'}>Network Map</a>
     <a href="/peering-policy" class:active={pathname === '/peering-policy'}>Peering Policy</a>
     <a href={networkInfo.statusUrl} target="_blank" rel="noreferrer" data-external>Status</a>
     <a href="https://hyperbit.it" target="_blank" rel="noreferrer" data-external>hyperbit.it</a>
