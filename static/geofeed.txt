@@ -8,6 +8,7 @@
 176.56.130.0/24,IT,IT-25,Varese,
 176.56.134.0/24,IT,IT-25,Monza,
 176.56.135.0/24,IT,IT-25,Milano,
+2a00:9f80::/32,IT,IT-25,Milano,
 2a0d:b287:dad0::/44,IT,IT-25,Milano,
 2a14:7586:f000::/36,IT,IT-32,Trento,
 2a14:7586:f000::/40,IT,IT-25,Milano,
