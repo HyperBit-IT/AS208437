@@ -1,10 +1,17 @@
-# Date updated UTC0:2026-07-28 00:14:00
-151.242.0.0/24,IT,IT-32,Milano,
+# Last modified: 2026-10-03
+151.242.0.0/24,IT,IT-25,Milano,
 140.233.176.0/24,IT,IT-32,Bolzano,
-94.158.185.0/24IT,IT-32,Trento,
-2a0d:b287:dad0::/44,IT,IT-32,Bolzano,
-2a14:7586:f000::/36,IT,IT-32,Bolzano,
-2a14:7586:f000::/40,IT,IT-32,Milano,
+94.158.185.0/24,IT,IT-32,Trento,
+176.56.128.0/21,IT,IT-25,Milano,
+176.56.128.0/24,IT,IT-25,Varese,
+176.56.129.0/24,IT,IT-25,Milano,
+176.56.130.0/24,IT,IT-25,Varese,
+176.56.134.0/24,IT,IT-25,Monza,
+176.56.135.0/24,IT,IT-25,Milano,
+2a0d:b287:dad0::/44,IT,IT-25,Milano,
+2a14:7586:f000::/36,IT,IT-32,Trento,
+2a14:7586:f000::/40,IT,IT-25,Milano,
 2a14:7586:f100::/40,IT,IT-32,Bolzano,
 2a14:7586:f200::/40,IT,IT-32,Trento,
 2a14:7586:ff00::/40,IT,IT-32,Bolzano,
+ 
